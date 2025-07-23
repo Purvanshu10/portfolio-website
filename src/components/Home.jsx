@@ -35,9 +35,17 @@ const Home = () => {
           <div className="min-h-[3vw] lg:min-h-[1.5vw]">
             <Typical
               steps={[
+                "Software Developer",
+                3000,
+                "Web Developer",
+                3000,
                 "MERN Stack Developer",
                 3000,
                 "Full Stack Developer",
+                3000,
+                "MENN Stack Developoer",
+                3000,
+                "RPA Developer (Blue Prism )",
                 3000,
                 "A.I & Machine Learning Visionary",
                 3000,
@@ -45,8 +53,10 @@ const Home = () => {
                 3000,
                 "Learner",
                 3000,
-                "Coding Enthusiast",
-                300
+                "Programmer",
+                3000,
+                "Tech Hustler"
+
               ]}
               loop={Infinity}
               wrapper="p"
@@ -101,7 +111,7 @@ const Home = () => {
 
         <div className="Resume mt-4 flex justify-center lg:justify-start">
           <a
-            href="https://drive.google.com/file/d/1bx2vyUpFaeSCYxzExLrFSOl8IJ7ns-lt/view?usp=sharing"
+            href="https://drive.google.com/file/d/15K8jjOlkmFbSgC7LhrN2YxWCB1G7jnM4/view?usp=sharing"
             target="_blank"
           >
             <button className="bg-[#64FCD9] font-bold px-8 py-2 lg:px-[2em] lg:py-[.4em] border rounded-md">
