@@ -1,11 +1,11 @@
 import React from "react";
 import programmerImg from "../assets/Programmer_Img.png";
 import programmer2 from "../assets/Programmer2.jpg";
-import instagramIcon from "../assets/instagram.png";
 import linkedinIcon from "../assets/linkedin.png";
 import githubIcon from "../assets/github.png";
 import image from "../assets/cartoon_img.png";
 import Typical from "react-typical";
+import { Icon } from "@iconify/react";
 
 const Home = () => {
   return (
@@ -29,34 +29,24 @@ const Home = () => {
 
         <div className="Software-heading text-center lg:text-left mt-4 lg:mt-6">
           <h1 className="text-[6vw] lg:text-[3vw] font-poppins">
-            Hi, I am Azaan Suhail&nbsp;
+            Hi, I am Purvanshu Jindal&nbsp;
           </h1>
 
           <div className="min-h-[3vw] lg:min-h-[1.5vw]">
             <Typical
               steps={[
-                "Software Developer",
+                "Full-Stack Developer",
                 3000,
-                "Web Developer",
+                "Software Engineer Intern",
                 3000,
                 "MERN Stack Developer",
                 3000,
-                "Full Stack Developer",
+                "Web Developer",
                 3000,
-                "MENN Stack Developer",
+                "AI & Automation Intern",
                 3000,
-                "RPA Developer (Blue Prism )",
+                "Problem Solver (DSA)",
                 3000,
-                "A.I & Machine Learning Visionary",
-                3000,
-                "DSA Enthusiast",
-                3000,
-                "Learner",
-                3000,
-                "Programmer",
-                3000,
-                "Tech Hustler"
-
               ]}
               loop={Infinity}
               wrapper="p"
@@ -67,9 +57,10 @@ const Home = () => {
 
         <div className="icons flex gap-[2vw] mt-4 justify-center lg:justify-start">
           <a
-            href="https://github.com/AzaanSuhail"
+            href="https://github.com/Purvanshu10"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <button>
               <img
@@ -81,9 +72,10 @@ const Home = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/azaan-suhail-272230239/"
+            href="https://www.linkedin.com/in/purvanshu-jindal-2127a32b2/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <button>
               <img
@@ -95,15 +87,13 @@ const Home = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/azaansuhail/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:purvanshujindal10@gmail.com"
+            aria-label="Email"
           >
-            <button>
-              <img
-                src={instagramIcon}
-                alt="Instagram"
-                className="w-[8vw] lg:w-[2.5vw] max-w-[50px]"
+            <button className="flex items-center justify-center">
+              <Icon
+                icon="mdi:gmail"
+                className="w-[8vw] lg:w-[2.5vw] max-w-[50px] h-[8vw] lg:h-[2.5vw] max-h-[50px] text-red-500 hover:scale-105 transition-transform"
               />
             </button>
           </a>
@@ -111,10 +101,11 @@ const Home = () => {
 
         <div className="Resume mt-4 flex justify-center lg:justify-start">
           <a
-            href=""
+            href="/resume (25-08-26).pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <button className="bg-[#64FCD9] font-bold px-8 py-2 lg:px-[2em] lg:py-[.4em] border rounded-md">
+            <button className="bg-[#64FCD9] text-black font-bold px-8 py-2 lg:px-[2em] lg:py-[.4em] border rounded-md hover:bg-[#50e6cc] transition-colors">
               Resume
             </button>
           </a>

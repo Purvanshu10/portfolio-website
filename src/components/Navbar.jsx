@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center w-full lg:h-[60px] sm:h-[42px] md:h-[55px] bg-black text-white px-4 relative">
       <div className="name hidden md:block">
         <h1 className="font-majorMono text-[2vw] lg:pl-28 md:pl-15">
-          Azaan Suhail
+          Purvanshu Jindal
         </h1>
       </div>
 
@@ -43,11 +43,11 @@ const Navbar = () => {
             </button>
           </Link>
           
-          {/* <Link to="experience" smooth={true} duration={500}>
+          <Link to="experience" smooth={true} duration={500}>
             <button className="btn btn-experience hover:bg-[#64FCD9] bg-white text-black font-normal hover:font-semibold px-2 py-0.5 border-black rounded-md text-xs">
               Experience
             </button>
-          </Link> */}
+          </Link>
 
           <Link to="contact" smooth={true} duration={500}>
             <button className="btn btn-contact hover:bg-[#64FCD9] bg-white text-black font-normal hover:font-semibold px-2 py-0.5 border-black rounded-md text-xs">
@@ -74,11 +74,11 @@ const Navbar = () => {
           </button>
         </Link>
 
-        {/* <Link to="experience" smooth={true} duration={500}>
+        <Link to="experience" smooth={true} duration={500}>
           <button className="btn btn-experience hover:bg-[#64FCD9] bg-white text-black font-normal hover:font-semibold px-4 py-2 border-black rounded-md">
             Experience
           </button>
-        </Link> */}
+        </Link>
         
         <Link to="contact" smooth={true} duration={500}>
           <button className="btn btn-contact hover:bg-[#64FCD9] bg-white text-black font-normal hover:font-semibold px-4 py-2 border-black rounded-md">
@@ -88,7 +88,7 @@ const Navbar = () => {
       </div>
 
       <div className="name md:hidden absolute left-1/2 transform -translate-x-1/2">
-        <h1 className="font-majorMono text-[5vw]">Azaan Suhail</h1>
+        <h1 className="font-majorMono text-[5vw]">Purvanshu Jindal</h1>
       </div>
     </div>
   );

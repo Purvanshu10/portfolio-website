@@ -8,39 +8,29 @@ const About = () => {
   const technologies = [
     { icon: "skill-icons:react-dark", label: "React" },
     { icon: "skill-icons:nextjs-dark", label: "Next.js" },
-    { icon: "skill-icons:tailwindcss-light", label: "Tailwind CSS" },
-    { icon: "vscode-icons:file-type-node", label: "Node.js" },
-    { icon: "simple-icons:express", label: "Express" },
     { icon: "skill-icons:javascript", label: "JavaScript" },
-    { icon: "logos:mysql", label: "MySQL" },
+    { icon: "skill-icons:typescript", label: "TypeScript" },
+    { icon: "devicon:java", label: "Java" },
+    { icon: "vscode-icons:file-type-node", label: "Node.js" },
+    { icon: "simple-icons:express", label: "Express.js" },
     { icon: "devicon:mongodb-wordmark", label: "MongoDB" },
+    { icon: "vscode-icons:file-type-sql", label: "SQL" },
     { icon: "skill-icons:html", label: "HTML" },
     { icon: "skill-icons:css", label: "CSS" },
-    { icon: "devicon:bootstrap", label: "Bootstrap" },
-    { icon: "logos:material-ui", label: "Material UI" },
-    { icon: "fa6-brands:shoelace", label: "Shoelace" },
-    { icon: "simple-icons:shadcnui", label: "ShadCN UI" },
-    { icon: "devicon:postman", label: "Postman" },
-    { icon: "devicon-plain:reactrouter", label: "React Router" },
-    { icon: "skill-icons:threejs-light", label: "Three.js" },
-    { icon: "skill-icons:figma-light", label: "Figma" },
-    { icon: "devicon:git", label: "Git" },
+    { icon: "skill-icons:tailwindcss-light", label: "Tailwind CSS" },
+    { icon: "ri:brain-line", label: "LLM Integration" },
     { icon: "skill-icons:github-light", label: "GitHub" },
-    { icon: "mdi:language-c", label: "C" },
-    { icon: "devicon:java-wordmark", label: "Java" },
-    { icon: "skill-icons:python-dark", label: "Python" },
-    { icon: "logos:pycharm", label: "PyCharm" },
-    { icon: "logos:intellij-idea", label: "IntelliJ" },
+    { icon: "simple-icons:meta", label: "Groq LLaMA 3.1" },
+    { icon: "carbon:speech-to-text", label: "Whisper v3" },
+    { icon: "simple-icons:n8n", label: "n8n" },
+    { icon: "devicon:git", label: "Git" },
     { icon: "vscode-icons:file-type-vscode", label: "VS Code" },
-    { icon: "logos:numpy", label: "NumPy" },
-    { icon: "logos:matplotlib-icon", label: "Matplotlib" },
-    { icon: "skill-icons:scikitlearn-light", label: "Scikit-learn" },
   ];
 
   return (
     <>
       <About_ />
-      <div className=" bg-[#1e2d2a] flex flex-col gap-2 pt-3 ml-0 mr-0 text-[#ffffff] ">
+      <div className=" bg-[#1e2d2a] flex flex-col gap-6 pt-3 ml-0 mr-0 text-[#ffffff] ">
         <div className="tool-technologies px-[2em] flex flex-col">
           <h1 className="text-3xl font-semibold pb-[2px] font-robotoCondensed underline text-[#e356ab]">
             Tools and technologies
@@ -52,7 +42,7 @@ const About = () => {
             create great user experiences.
           </p>
 
-          <motion.div className="iconsdiv flex gap-[1vw] flex-wrap justify-evenly pt-1">
+          <motion.div className="iconsdiv flex gap-[1vw] flex-wrap justify-evenly pt-4">
             {technologies.map((tech, index) => {
               return (
                 <motion.div
@@ -78,112 +68,125 @@ const About = () => {
                       repeat: Infinity,
                     },
                   }}
-                  className="flex gap-[1em] justify-center items-center"
+                  className="flex gap-[0.5em] justify-center items-center py-2 px-3"
                 >
-                  <Icon icon={tech.icon} width="36" height="64" />
+                  <Icon icon={tech.icon} width="36" height="36" />
                   <h1 className="text-[1em]">{tech.label}</h1>
                 </motion.div>
               );
             })}
-            <br />
           </motion.div>
         </div>
 
-        <div className="coding Profile ml-1 pb-3">
-          <h1 className="text-3xl font-semibold px-[2rem] font-robotoCondensed underline text-blue-600">
-            Coding Profiles
+        <div className="coding-profile ml-1 pb-2 px-[2rem]">
+          <h1 className="text-3xl font-semibold font-robotoCondensed underline text-blue-400">
+            Problem Solving
           </h1>
-          <h1 className="px-[2.5rem] pt-2">
-            Solved <b>1000+</b> DSA problems across all coding platforms.
-          </h1>
-          <div className="button pl-[4rem] pt-4 ">
+          <p className="pt-2 text-base">
+            Solved <b className="text-[#64FCD9]">300+</b> Data Structures and Algorithms problems across arrays, recursion, trees, graphs, binary search, BFS, DFS, and dynamic programming.
+          </p>
+          <p className="pt-1 text-sm text-gray-300">
+            Practiced structured algorithmic problem solving across LeetCode and GeeksForGeeks.
+          </p>
+          <div className="button pt-4 flex flex-wrap gap-3">
             <a
-              href="https://codolio.com/profile/Azaan%20Suhail"
+              href="https://leetcode.com/u/purvanshujindal10/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <button
                 type="button"
-                className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                Codolio
-              </button>
-            </a>
-            <a
-              href="https://leetcode.com/u/AzaanSuhail/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                type="button"
-                className="text-black bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                className="text-white bg-gradient-to-br from-yellow-500 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2"
               >
                 LeetCode
               </button>
             </a>
+            <a
+              href="https://www.geeksforgeeks.org/profile/purvanshu09o8?tab=activity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                type="button"
+                className="text-white bg-gradient-to-br from-green-600 to-teal-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2"
+              >
+                GeeksForGeeks
+              </button>
+            </a>
+          </div>
+        </div>
 
+        <div className="certifications ml-1 pb-2 px-[2rem]">
+          <h1 className="text-3xl font-semibold font-robotoCondensed underline text-[#64FCD9] mb-3">
+            Certifications
+          </h1>
+          <div className="flex flex-col md:flex-row gap-4 pt-2">
             <a
-              href="https://www.geeksforgeeks.org/user/azaansuhail/"
+              href="https://drive.google.com/file/d/1_Dgez7rqnfDGQgCfDkwLbiAs91iW-nct/view"
               target="_blank"
               rel="noopener noreferrer"
+              className="p-4 bg-white/10 rounded-xl border border-white/20 hover:border-[#64FCD9] transition duration-300 flex-1 flex flex-col justify-between"
             >
-              <button
-                type="button"
-                class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                Geeks For Geeks
-              </button>
-            </a>
-            <a
-              href="https://www.interviewbit.com/profile/azaan-suhail/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                type="button"
-                class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                Interview Bit
-              </button>
-            </a>
-
-            <a
-              href="https://codeforces.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                type="button"
-                class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                Codeforces
-              </button>
-            </a>
-            <a
-              href="https://www.codechef.com/users/azaansuhail"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                type="button"
-                class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 font-bold"
-              >
-                Code Chef
-              </button>
+              <div>
+                <h2 className="text-lg font-bold text-[#64FCD9]">IBM SkillsBuild (2025)</h2>
+                <p className="text-sm text-gray-200 mt-1">From Learner to Builder: AI Agent Architect</p>
+              </div>
+              <span className="text-xs text-teal-300 font-semibold mt-3 underline inline-block">View Credential →</span>
             </a>
 
             <a
-              href="https://www.naukri.com/code360/profile/AzaanSuhail"
+              href="https://drive.google.com/file/d/1neAththUEWJR5Eop-_WBv57ORC4BRVIz/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              className="p-4 bg-white/10 rounded-xl border border-white/20 hover:border-[#64FCD9] transition duration-300 flex-1 flex flex-col justify-between"
             >
-              <button
-                type="button"
-                class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                Coding Ninjas
-              </button>
+              <div>
+                <h2 className="text-lg font-bold text-[#64FCD9]">IBM (2025)</h2>
+                <p className="text-sm text-gray-200 mt-1">Computer Networking Basics</p>
+              </div>
+              <span className="text-xs text-teal-300 font-semibold mt-3 underline inline-block">View Credential →</span>
             </a>
+          </div>
+        </div>
+
+        <div className="education ml-1 pb-6 px-[2rem]">
+          <h1 className="text-3xl font-semibold font-robotoCondensed underline text-[#e356ab] mb-4">
+            Education
+          </h1>
+          <div className="flex flex-col gap-3">
+            <div className="p-4 bg-white/10 rounded-xl border border-white/20">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h2 className="text-lg font-bold text-[#64FCD9]">
+                  Maharaja Agrasen Institute of Technology (MAIT), Delhi
+                </h2>
+                <span className="text-xs text-gray-300 font-medium">Sept 2023 – Present</span>
+              </div>
+              <p className="text-sm text-gray-200 mt-1">
+                Bachelor of Technology in Information Technology <span className="text-teal-300 font-semibold">| CGPA: 8.86</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="p-4 bg-white/10 rounded-xl border border-white/20">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-base font-semibold text-white">S.D. Public School (CBSE), Delhi</h3>
+                  <span className="text-xs text-gray-300">2023</span>
+                </div>
+                <p className="text-sm text-gray-200 mt-1">
+                  Class XII <span className="text-teal-300 font-semibold">| 94%</span>
+                </p>
+              </div>
+
+              <div className="p-4 bg-white/10 rounded-xl border border-white/20">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-base font-semibold text-white">S.D. Public School (CBSE), Delhi</h3>
+                  <span className="text-xs text-gray-300">2021</span>
+                </div>
+                <p className="text-sm text-gray-200 mt-1">
+                  Class X <span className="text-teal-300 font-semibold">| 96%</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

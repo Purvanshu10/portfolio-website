@@ -22,10 +22,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .send(
-        "service_lhww1qf",
-        "template_6s66uop",
+        "service_sfy8lqw",
+        "template_k9mnt1x",
         formData,
-        "8oXWSBFxwQOGI2la3"
+        "omLFTUBhLIPOu7PIA"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -45,7 +45,39 @@ const Contact = () => {
   return (
     <div className="flex flex-col lg:flex-row m-4 p-6 bg-[#E9F1F2] rounded-lg shadow-lg">
       <div className="flex-1 p-4">
-        <h2 className="text-3xl font-bold mb-4 text-center">Contact Me</h2>
+        <h2 className="text-3xl font-bold mb-2 text-center">Contact Me</h2>
+        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-700 mb-4">
+          <a
+            href="mailto:purvanshujindal10@gmail.com"
+            className="flex items-center gap-1 hover:text-teal-700 font-medium transition"
+          >
+            📧 purvanshujindal10@gmail.com
+          </a>
+          <a
+            href="tel:+919313940136"
+            className="flex items-center gap-1 hover:text-teal-700 font-medium transition"
+          >
+            📞 +91 9313940136
+          </a>
+        </div>
+        <div className="flex justify-center gap-4 mb-6">
+          <a
+            href="https://www.linkedin.com/in/purvanshu-jindal-2127a32b2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs bg-[#0077b5] text-white px-3 py-1.5 rounded-md hover:opacity-90 transition font-semibold"
+          >
+            LinkedIn Profile
+          </a>
+          <a
+            href="https://github.com/Purvanshu10"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs bg-gray-900 text-white px-3 py-1.5 rounded-md hover:bg-black transition font-semibold"
+          >
+            GitHub Profile
+          </a>
+        </div>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
             <label className="block font-medium mb-2">Name:</label>

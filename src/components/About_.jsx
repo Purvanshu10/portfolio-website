@@ -21,11 +21,11 @@ const slideInVariant = {
 
 const About_ = () => {
   const paragraphs = [
-    `Hi, I’m Azaan Suhail, a Computer Science graduate from State Government Engineering College, Mainpuri, Uttar Pradesh, India.`,
-    `I have a strong passion for solving real-world problems using code. With over 1000+ DSA problems solved across platforms like LeetCode, CodeChef, Codeforces, GFG, InterviewBit, Coding Ninjas, and SPOJ, I’ve built a solid foundation in Data Structures and Algorithms.`,
-    `Alongside problem-solving, I’m skilled in Full Stack Web Development, especially in Frontend. I enjoy building responsive and user-friendly interfaces using HTML, CSS, JavaScript, React, and connecting them to powerful backends with Node.js, Express, and MongoDB. I'm also experienced with Git, GitHub, Figma, and both SQL and NoSQL databases.`,
-    `I’ve built real-world projects like AI Interview Assistants, Real-time Chat Apps, and GitHub-like Repository Managers. These helped me understand scalable, production-ready systems.`,
-    `Beyond tech, I contribute to the developer community through my LinkedIn network of 5000+ followers, where I share valuable insights, tips, and learning resources to help others grow.`,
+    `Hi, I’m Purvanshu Jindal, an Information Technology undergraduate at Maharaja Agrasen Institute of Technology (MAIT), Delhi (CGPA: 8.86, Sept 2023 – Present).`,
+    `I specialize in Full-Stack Web Development and Software Engineering, building responsive, scalable applications with React, Next.js, HTML, CSS, Tailwind CSS, Node.js, Express.js, MongoDB, and MySQL. I design modular backend architectures with RESTful APIs, JWT authentication, and role-based access control.`,
+    `I have practical industry experience in AI & Automation, having developed an AI-powered itinerary generation system integrating 5+ external APIs and orchestrating multi-step workflow pipelines that reduced manual processing time by approximately 30%.`,
+    `I have engineered impactful, production-grade projects: Mocklytics (an AI mock interview platform featuring Groq LLaMA 3.1 and Whisper v3 speech recognition with recruiter-style performance analytics), WeCode (a real-time collaborative coding platform with WebSocket synchronization and Judge0 CE code execution), and FitLife (a full-stack gym management system with role-based dashboards and automated PDF invoices).`,
+    `I am passionate about algorithmic problem solving and Data Structures. I have solved 300+ DSA problems spanning arrays, recursion, trees, graphs, binary search, BFS, DFS, and dynamic programming, following the structured Striver A2Z roadmap.`,
   ];
 
   return (
