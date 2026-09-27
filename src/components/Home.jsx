@@ -101,7 +101,7 @@ const Home = () => {
 
         <div className="Resume mt-4 flex justify-center lg:justify-start">
           <a
-            href="/resume (25-08-26).pdf"
+            href="/resume%20(25-08-26).pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
