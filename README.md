@@ -51,4 +51,4 @@ Follow the steps below to set up the project locally:
 - Enhance SEO performance and site optimization for faster loading times.
 
 # Live : 
- -https://personal-portfolio-website-seven-teal.vercel.app/
+ -https://portfolio-website-six-theta-50.vercel.app/
